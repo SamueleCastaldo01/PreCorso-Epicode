@@ -1,0 +1,83 @@
+body {
+    margin: 0px;
+    display: flex;
+    height: 100vh;            /* Altezza del viewport */
+    background: linear-gradient(to right, #101023, #192155); /* Rosso a Blu */
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+ul li {
+    margin-bottom: 20px; 
+}
+
+h1, .title {
+    background: linear-gradient(to right, #CB2376, #FF00D6);
+    -webkit-background-clip: text; /* Specifico per WebKit (Safari/Chrome) */
+    -webkit-text-fill-color: transparent; /* Specifico per WebKit (Safari/Chrome) */
+    background-clip: text;
+    color: transparent;
+}
+
+.title {
+    margin-top: 50px;
+}
+
+.textColor {
+    color: #CB2376;
+}
+
+.container {
+    margin-left: 15px;
+}
+
+.image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50px;
+}
+
+.presentazione {
+    display: flex;
+    justify-content: start;
+    flex-direction: row;
+}
+
+.ParPresentazione{
+    margin-top: 50px;
+    margin-left: 10px;
+}
+
+.inFondoPagina {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    background: linear-gradient(to right, #27008F, #570094, #A5009B, #DE00A0); 
+    bottom: 0;
+    width: 100%;
+}
+
+.contatti {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 10px; 
+}
+
+.contatti p {
+    margin: 13px 10px; /* Aggiunge spazio tra i paragrafi */
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+.social-icons a {
+    color: white; 
+    font-size: 24px; 
+    margin: 0 15px; 
+    text-decoration: none; /* Rimuove la sottolineatura */
+    transition: color 0.3s ease; /* Transizione di colore */
+}

@@ -1,0 +1,150 @@
+body {
+    margin: 0px;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;            /* Altezza del viewport */
+    background: linear-gradient(to right, #101023, #192155); /* Rosso a Blu */
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+
+
+h1, .title {
+    background: linear-gradient(to right, #CB2376, #FF00D6);
+    -webkit-background-clip: text; /* Specifico per WebKit (Safari/Chrome) */
+    -webkit-text-fill-color: transparent; /* Specifico per WebKit (Safari/Chrome) */
+    background-clip: text;
+    color: transparent;
+}
+
+.textColor {
+    color: #CB2376;
+}
+
+.container {
+ color: white;
+}
+
+.containerForm {
+    border-style: solid;
+    border-width: 4px;
+    border-radius: 20px;
+    border-color: #161b44;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    margin-top: 70px;
+    width: 700px;
+}
+
+.inRegistrazione {
+    color: white; /* Colore del testo */
+    background: transparent; /* Sfondo trasparente */
+    border: 2px solid #CB2376; /* Bordo colorato */
+    border-radius: 8px; /* Bordo arrotondato */
+    padding: 10px;
+    font-size: 16px;
+    margin: 10px;
+    width: 300px;
+    height: 60px;
+    box-sizing: border-box;
+}
+
+.butRegistrazione {
+    color: white; /* Colore del testo */
+    background: transparent; /* Sfondo trasparente */
+    border: 2px solid #CB2376; /* Bordo colorato */
+    border-radius: 8px; /* Bordo arrotondato */
+    padding: 10px;
+    font-size: 16px;
+    margin: 10px;
+    margin-bottom: 15px;
+    width: 300px;
+    height: 60px;
+    box-sizing: border-box;
+}
+
+.butRegistrazione:hover {
+    background-color: #CB2376;
+}
+
+.butRegistrazione:active {
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3); /* Ombra interna quando si clicca */
+}
+
+
+
+/* Stile di base per il checkbox */
+input[type="checkbox"] {
+    appearance: none; /* Rimuove lo stile predefinito del checkbox */
+    width: 20px;
+    height: 20px;
+    border: 2px solid #cb2376;
+    border-radius: 3px;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    transition: background-color 0.3s, border-color 0.3s;
+    vertical-align: middle; /* Allinea verticalmente con il testo */
+}
+
+/* Stile quando il checkbox è selezionato */
+input[type="checkbox"]:checked {
+    background-color: #cb2376;
+    border-color: #cb2376;
+}
+
+/* Aggiunge il segno di spunta */
+input[type="checkbox"]:checked::after {
+    content: '✓';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 14px;
+}
+
+/* Stile per l'etichetta */
+label {
+    font-size: 16px;
+    cursor: pointer;
+    vertical-align: middle; /* Allinea verticalmente con il checkbox */
+}
+
+
+
+.inFondoPagina {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    background: linear-gradient(to right, #27008F, #570094, #A5009B, #DE00A0); 
+    bottom: 0;
+    width: 100%;
+}
+
+.contatti {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 10px; 
+}
+
+.contatti p {
+    margin: 13px 10px; /* Aggiunge spazio tra i paragrafi */
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+.social-icons a {
+    color: white; 
+    font-size: 24px; 
+    margin: 0 15px; 
+    text-decoration: none; /* Rimuove la sottolineatura */
+    transition: color 0.3s ease; /* Transizione di colore */
+}
